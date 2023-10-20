@@ -1,0 +1,49 @@
+/* #region Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion Common */
+
+/* #region layout */
+.container {
+    max-width: 1552px;
+    width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+[class^="col-"] {
+    padding: 0 1rem;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* #region layout */
+
+/* #region utility */
+.d-flex {
+    display: flex;
+}
+
+.m-auto {
+    margin: auto;
+}
+/* #endregion utility */
