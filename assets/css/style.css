@@ -9,7 +9,7 @@
 
 /* #region layout */
 .container {
-    max-width: 1552px;
+    max-width: 1152px;
     width: 80%;
     margin: auto;
 }
@@ -36,7 +36,7 @@
     width: 100%;
 }
 
-/* #region layout */
+/* #endregion layout */
 
 /* #region utility */
 .d-flex {
@@ -47,3 +47,52 @@
     margin: auto;
 }
 /* #endregion utility */
+
+/* #region header */
+.site_header {
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+.site_header .container {
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+/* #endregion header */
+
+.site_main {
+    padding-top: 80px;
+}
+
+/* #region debug */
+.debug .site_header {
+    background-color: black;
+    border: 2px solid orange;
+}
+
+.debug .header_logo {
+    height: 20px;
+    width: 50px;
+    background-color: white;
+}
+
+.debug .header_nav {
+    height: 20px;
+    width: 300px;
+    background-color: grey;
+}
+
+.debug .site_main {
+    height: 500px;
+    background: #ededed;
+    border: 1px solid black;
+}
+
+.debug [class^="col-"] {
+    height: 70px;
+    background: white;
+    border: 1px dotted red;
+}
+/* #endregion debug */
