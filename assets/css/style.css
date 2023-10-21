@@ -105,7 +105,7 @@
 }
 
 .debug .site_main {
-    height: 1000px;
+    height: 1500px;
     background: #ededed;
     border: 1px solid black;
 }
@@ -117,13 +117,13 @@
 }
 
 .debug [class^="col-"] {
-    height: 50px;
+    height: 100px;
     border: 1px dotted red;
 }
 
 .debug .radius_container_6,
 .debug .radius_container_10 {
-    height: 50px;
+    height: 100%;
     width: 100%;
     border: 1px dashed green;
     background: yellow;
