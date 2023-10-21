@@ -17,7 +17,7 @@
 }
 
 .debug .site_main {
-    height: 1500px;
+    height: 100%;
     background: #ededed;
     border: 1px solid black;
 }
@@ -29,7 +29,7 @@
 }
 
 .debug [class^="col-"] {
-    height: 100px;
+    height: 200px;
     border: 1px dotted red;
 }
 
@@ -39,6 +39,12 @@
     width: 100%;
     border: 1px dashed green;
     background: yellow;
+}
+
+.site_footer {
+    height: 200px;
+    background-color: var(--responsive-lightblack);
+    border: 2px dotted white;
 }
 
 /* #endregion debug */
@@ -109,8 +115,16 @@ img {
     width: calc(100% / 12 * 4);
 }
 
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+
 .col-6 {
     width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
 }
 
 .col-8 {
@@ -150,11 +164,16 @@ img {
 .m-auto {
     margin: auto;
 }
+
+.p-relative {
+    position: relative;
+}
 /* #endregion utility */
 
 /* #region header */
 .site_header {
     position: fixed;
+    z-index: 100;
     width: 100%;
     background-color: var(--responsive-blue);
 }
@@ -191,7 +210,6 @@ img {
 .get_demo [class^="col-"] {
     background-color: var(--responsive-lightblue);
     border-radius: 10px;
-    position: relative;
 }
 
 .get_demo h6 {
@@ -206,15 +224,26 @@ img {
 }
 
 .get_demo .btn {
-    padding: 0.2rem 0.8rem;
-    font-size: 0.6rem;
+    padding: 0.2rem 1rem;
+    font-size: 0.5rem;
     background-color: var(--responsive-blue);
     border: var(--responsive-blue);
     color: var(--responsive-white);
 }
 
-.get_demo img {
+.get_demo .col-5 img {
     position: absolute;
     bottom: 0;
+    right: 2px;
     max-height: 100%;
+}
+
+.get_demo .col-4 {
+    text-align: center;
+}
+
+.get_demo .col-4 i {
+    color: var(--responsive-blue);
+    padding-bottom: 0.8rem;
+    font-size: 2rem;
 }

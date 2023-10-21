@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="">
+<body class="debug">
     <header class="site_header d-flex">
         <div class="container d-flex"> 
             <div class="header_logo">
@@ -30,20 +31,25 @@
 
     <main class="site_main">
         <section class="get_demo">
-            <div class="container">
+            <div class="container d-flex">
                 <div class="row">
                     <div class="col-8">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-7">
                                 <h6>Get a demo application</h6>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dignissimos autem molestiae repellendus eligendi ullam repudiandae iusto nisi. Consequatur, aperiam?</p>
-                                <button class="btn">App Store</button>
+                                <button class="btn"><i class="fa-brands fa-apple"></i> App Store</button>
                             </div>
-                            <div class="col-4">
+                            <div class="col-5 p-relative">
                                 <img src="./assets/img/phone.png" alt="">
                             </div>
                         </div>
-                    <div class="col-4"></div>
+                    </div>
+                    <div class="col-4">
+                        <i class="fa-solid fa-file-code"></i>
+                        <h6>Clean Code</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium numquam totam incidunt alias iusto voluptates rerum quasi maxime odit vel.</p>
+                    </div>
                     <div class="col-4"></div>
                     <div class="col-4"></div>
                     <div class="col-4"></div>
