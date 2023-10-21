@@ -62,6 +62,7 @@ body {
     --responsive-gold: #fdc15f;
     --responsive-lightblack: #333333;
     --responsive-violet_phrases: #8682c6;
+    --responsive-light_grey: #657b8e;
 }
 
 ul {
@@ -75,6 +76,10 @@ ul {
 button {
     background-color: transparent;
     border: none;
+}
+
+img {
+    width: 100%;
 }
 
 /* #endregion Common */
@@ -181,4 +186,35 @@ button {
 
 .site_main {
     padding-top: 80px;
+}
+
+.get_demo [class^="col-"] {
+    background-color: var(--responsive-lightblue);
+    border-radius: 10px;
+    position: relative;
+}
+
+.get_demo h6 {
+    color: var(--responsive-blue);
+}
+
+.get_demo p {
+    color: var(--responsive-light_grey);
+    font-size: 0.5rem;
+    font-weight: 500;
+    padding: 0.7rem 0;
+}
+
+.get_demo .btn {
+    padding: 0.2rem 0.8rem;
+    font-size: 0.6rem;
+    background-color: var(--responsive-blue);
+    border: var(--responsive-blue);
+    color: var(--responsive-white);
+}
+
+.get_demo img {
+    position: absolute;
+    bottom: 0;
+    max-height: 100%;
 }
