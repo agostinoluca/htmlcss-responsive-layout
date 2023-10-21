@@ -232,13 +232,6 @@ img {
     color: var(--responsive-white);
 }
 
-.get_demo .col-5 img {
-    position: absolute;
-    bottom: 0;
-    right: 2px;
-    max-height: 100%;
-}
-
 .get_demo .col-4 {
     text-align: center;
 }
