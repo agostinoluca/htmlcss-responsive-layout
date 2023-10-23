@@ -248,3 +248,16 @@ img {
 .testimonials {
     text-align: center;
 }
+
+/* #region RESPONSIVE */
+@media screen and (max-width: 480px) {
+    [class^="col-"]{
+        width: 100%;
+    }
+
+    .get_demo .col-8{
+        display: block;
+    }
+
+}
+/* #endregion RESPONSIVE */
