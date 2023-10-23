@@ -183,7 +183,8 @@ img {
     font-size: 0.6rem;
 }
 
-.header_nav a {
+.header_nav a,
+.menu_header {
     color: var(--responsive-white);
 }
 
@@ -196,6 +197,7 @@ img {
 
 /* #endregion header */
 
+/* #region main */
 .site_main {
     padding-top: 80px;
 }
@@ -234,12 +236,28 @@ img {
     font-size: 2rem;
 }
 
+.planning,
+.benefits,
+.its_free {
+    background-color: var(--responsive-violet_bg);
+}
+
 .its_free, 
 .site_footer,
 .benefits .col-12, 
 .testimonials {
     text-align: center;
 }
+
+/* #endregion main */
+
+/* #region footer */
+.site_footer{
+    background-color: var(--responsive-lightblack);
+}
+
+/* #endregion footer */
+
 
 /* #region RESPONSIVE */
 @media screen and (min-width: 0px) {
@@ -249,6 +267,15 @@ img {
 
     .get_demo .col-8{
         display: block;
+    }
+
+    .container{
+        margin: 5px;
+        width: 100%;
+    }
+
+    .header_nav{
+        display: none;
     }
 }
 
@@ -299,5 +326,13 @@ img {
     .benefits .col-4{
         width: calc((100% / 12 * 4) - 0.4rem);
     } 
+
+    .header_nav{
+        display: flex;
+    }
+
+    .menu_header{
+        display: none;
+    }
 }
 /* #endregion RESPONSIVE */
