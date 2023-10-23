@@ -93,7 +93,7 @@ img {
 /* #region layout */
 .container {
     max-width: 1152px;
-    width: 80%;
+    width: 92%;
     margin: auto;
 }
 
@@ -106,26 +106,6 @@ img {
 [class^="col-"] {
     padding: 0 1rem;
     margin: 0.2rem;
-}
-
-.col-3 {
-    width: calc((100% / 12 * 3) - 0.4rem);
-}
-
-.col-4 {
-    width: calc((100% / 12 * 4) - 0.4rem);
-}
-
-.col-6 {
-    width: calc((100% / 12 * 6) - 0.4rem);
-}
-
-.col-8 {
-    width: calc((100% / 12 * 8) - 0.4rem);
-}
-
-.col-9 {
-    width: calc((100% / 12 * 9) - 0.4rem);
 }
 
 .col-12 {
@@ -195,6 +175,10 @@ img {
     font-weight: medium;
 }
 
+.header_nav {
+    display: none;
+}
+
 /* #endregion header */
 
 /* #region main */
@@ -226,11 +210,15 @@ img {
     color: var(--responsive-white);
 }
 
-.get_demo .col-4 {
+.get_demo .col-8-lg{
+    display: block;
+}
+
+.get_demo .col-4-lg {
     text-align: center;
 }
 
-.get_demo .col-4 i {
+.get_demo .col-4-lg i {
     color: var(--responsive-blue);
     padding-bottom: 0.8rem;
     font-size: 2rem;
@@ -244,7 +232,7 @@ img {
 
 .its_free, 
 .site_footer,
-.benefits .col-12, 
+.benefits .col-12 h5, 
 .testimonials {
     text-align: center;
 }
@@ -260,44 +248,22 @@ img {
 
 
 /* #region RESPONSIVE */
-@media screen and (min-width: 0px) {
-    [class^="col-"]{
-        width: 100%;
-    }
-
-    .get_demo .col-8{
-        display: block;
-    }
-
-    .container{
-        width: 92%;
-    }
-
-    .header_nav{
-        display: none;
-    }
-}
-
 @media screen and (min-width: 480px) {
     .container{
         width: 90%;
     }
     
-    .col-4 {
+    .col-4-lg {
         width: calc((100% / 12 * 4) - 0.4rem);
     }
     
-    .col-8 {
+    .col-8-lg {
         width: calc((100% / 12 * 8) - 0.4rem);
     }
 
-    .benefits .col-4{
+    .col-6-md{
         width: calc((100% / 12 * 6) - 0.4rem);
     } 
-
-    .get_demo .col-8{
-        display: flex;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -305,33 +271,25 @@ img {
         width: 80%;
     }
 
-    .col-3 {
+    .col-3-lg {
         width: calc((100% / 12 * 3) - 0.4rem);
     }
     
-    .col-4 {
+    .col-4-lg {
         width: calc((100% / 12 * 4) - 0.4rem);
     }
     
-    .col-6 {
+    .col-6-lg {
         width: calc((100% / 12 * 6) - 0.4rem);
     }
     
-    .col-8 {
+    .col-8-lg {
         width: calc((100% / 12 * 8) - 0.4rem);
     }
     
-    .col-9 {
+    .col-9-lg {
         width: calc((100% / 12 * 9) - 0.4rem);
-    }
-    
-    .col-12 {
-        width: 100%;
-    }         
-
-    .benefits .col-4{
-        width: calc((100% / 12 * 4) - 0.4rem);
-    } 
+    }   
 
     .header_nav{
         display: flex;
@@ -339,6 +297,10 @@ img {
 
     .menu_header{
         display: none;
+    }
+
+    .get_demo .col-8-lg{
+        display: flex;
     }
 }
 /* #endregion RESPONSIVE */
