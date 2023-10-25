@@ -93,7 +93,7 @@ img {
 /* #region layout */
 .container {
     max-width: 1152px;
-    width: 92%;
+    width: 85%;
     margin: auto;
 }
 
@@ -104,8 +104,8 @@ img {
 }
 
 [class^="col-"] {
-    padding: 0 1rem;
-    margin: 0.2rem;
+    padding: 1rem;
+    margin: 0.3rem;
 }
 
 .col-12 {
@@ -141,6 +141,11 @@ img {
 .p-relative {
     position: relative;
 }
+
+.space-between {
+    justify-content: space-between;
+}
+
 /* #endregion utility */
 
 /* #region header */
@@ -191,20 +196,27 @@ img {
     border-radius: 10px;
 }
 
-.get_demo h6 {
+.get_demo .apple_app {
+    padding-right: 1rem;
+}
+
+.get_demo h4 {
     color: var(--responsive-blue);
 }
 
 .get_demo p {
     color: var(--responsive-light_grey);
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-weight: 500;
     padding: 0.7rem 0;
+    line-height: 1rem;
 }
 
 .get_demo .btn {
+    margin: 1rem 0;
     padding: 0.2rem 1rem;
-    font-size: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
     background-color: var(--responsive-blue);
     border: var(--responsive-blue);
     color: var(--responsive-white);
@@ -213,6 +225,14 @@ img {
 .get_demo .col-8-lg{
     display: block;
 }
+
+.get_demo .phone {
+    margin-bottom: -1rem;
+    max-height: 300px;
+    min-width: 170px;
+    width: 70%;
+}
+
 
 .get_demo .col-4-lg {
     text-align: center;
@@ -254,15 +274,15 @@ img {
     }
     
     .col-4-lg {
-        width: calc((100% / 12 * 4) - 0.4rem);
+        width: calc((100% / 12 * 4) - 0.6rem);
     }
     
     .col-8-lg {
-        width: calc((100% / 12 * 8) - 0.4rem);
+        width: calc((100% / 12 * 8) - 0.6rem);
     }
 
     .col-6-md{
-        width: calc((100% / 12 * 6) - 0.4rem);
+        width: calc((100% / 12 * 6) - 0.6rem);
     } 
 }
 
@@ -272,23 +292,23 @@ img {
     }
 
     .col-3-lg {
-        width: calc((100% / 12 * 3) - 0.4rem);
+        width: calc((100% / 12 * 3) - 0.6rem);
     }
     
     .col-4-lg {
-        width: calc((100% / 12 * 4) - 0.4rem);
+        width: calc((100% / 12 * 4) - 0.6rem);
     }
     
     .col-6-lg {
-        width: calc((100% / 12 * 6) - 0.4rem);
+        width: calc((100% / 12 * 6) - 0.6rem);
     }
     
     .col-8-lg {
-        width: calc((100% / 12 * 8) - 0.4rem);
+        width: calc((100% / 12 * 8) - 0.6rem);
     }
     
     .col-9-lg {
-        width: calc((100% / 12 * 9) - 0.4rem);
+        width: calc((100% / 12 * 9) - 0.6rem);
     }   
 
     .header_nav{
