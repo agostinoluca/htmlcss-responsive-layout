@@ -116,8 +116,8 @@ img {
     border-radius: 6px;
 }
 
-.radius_container_10 {
-    border-radius: 10px;
+.radius_container_20 {
+    border-radius: 20px;
 }
 
 .btn {
@@ -146,6 +146,25 @@ img {
     justify-content: space-between;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-12 {
+    padding: 3rem;
+}
+
+.p-y-12 {
+    padding: 3rem 0;
+}
+
+.p-top-16 {
+    padding-top: 4rem;
+}
 /* #endregion utility */
 
 /* #region header */
@@ -191,6 +210,13 @@ img {
     padding-top: 80px;
 }
 
+.planning,
+.benefits,
+.its_free {
+    background-color: var(--responsive-violet_bg);
+}
+
+/* #region get_demo */
 .get_demo [class^="col-"] {
     background-color: var(--responsive-lightblue);
     border-radius: 10px;
@@ -233,28 +259,32 @@ img {
     width: 70%;
 }
 
-
-.get_demo .col-4-lg {
-    text-align: center;
-}
-
 .get_demo .col-4-lg i {
     color: var(--responsive-blue);
     padding-bottom: 0.8rem;
     font-size: 2rem;
 }
+/* #endregion get_demo */
 
-.planning,
-.benefits,
-.its_free {
-    background-color: var(--responsive-violet_bg);
+.strategic_planning {
+    color: var(--responsive-white);
+    padding: 3rem 1rem 3rem 1rem;
 }
 
-.its_free, 
-.site_footer,
-.benefits .col-12 h5, 
-.testimonials {
-    text-align: center;
+.planning .app_development {
+    align-items: end;
+}
+
+.planning .radius_container_20 {
+    background-color: var(--responsive-white);
+}
+
+.planning .arrow_down {
+    background-color: var(--responsive-violet_bg);
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    margin: 2rem auto 0 auto;
 }
 
 /* #endregion main */
