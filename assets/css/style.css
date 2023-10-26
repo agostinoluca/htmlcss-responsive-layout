@@ -47,6 +47,10 @@
     border: 2px dotted white;
 }
 
+.debug .testimonial_photo {
+    background-color: red;
+}
+
 /* #endregion debug */
 
 /* #region Common */
@@ -154,6 +158,18 @@ img {
     padding: 1rem;
 }
 
+.p-x-6 {
+    padding: 0 1.5rem;
+}
+
+.p-6-top {
+    padding-top: 1.5rem;
+}
+
+.p-6-bottom {
+    padding-bottom: 1.5rem;
+}
+
 .p-12 {
     padding: 3rem;
 }
@@ -212,7 +228,8 @@ img {
 
 .planning,
 .benefits,
-.its_free {
+.its_free,
+.testimonial_card {
     background-color: var(--responsive-violet_bg);
 }
 
@@ -287,6 +304,41 @@ img {
     margin: 2rem auto 0 auto;
 }
 
+.testimonials h2 {
+    color: var(--responsive-violet_bg);
+}
+
+
+.testimonial_card {
+    border-radius: 30px;
+    padding: 2rem;
+    justify-content: center;
+    color: var(--responsive-white);
+    margin-bottom: 1.5rem;
+}
+
+.testimonial_photo {
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+}
+
+.testimonial_photo img {
+    border-radius: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.biography p {
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.biography h4 {
+    padding-top: 1.5rem;
+}
+
 /* #endregion main */
 
 /* #region footer */
@@ -311,8 +363,16 @@ img {
         width: calc((100% / 12 * 8) - 0.6rem);
     }
 
+    .col-3-md{
+        width: calc((100% / 12 * 3) - 0.6rem);
+    } 
+    
     .col-6-md{
         width: calc((100% / 12 * 6) - 0.6rem);
+    } 
+    
+    .col-9-md{
+        width: calc((100% / 12 * 9) - 0.6rem);
     } 
 }
 
