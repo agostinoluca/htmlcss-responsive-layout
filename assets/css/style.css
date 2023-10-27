@@ -318,12 +318,20 @@ img {
     background-color: var(--responsive-white);
 }
 
+.planning p {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+}
+
 .planning .arrow_down {
     background-color: var(--responsive-violet_bg);
-    width: 3rem;
-    aspect-ratio: 1 / 1;
+    width: 40px;
+    height: 40px;    
     border-radius: 100%;
-    margin: 2rem auto 0 auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Testimonials Section */
@@ -332,6 +340,9 @@ img {
     color: var(--responsive-violet_bg);
 }
 
+#testimonial-paragraph {
+    line-height: 1.8rem;
+}
 
 .testimonial_card {
     border-radius: 30px;
@@ -388,7 +399,8 @@ img {
 
 
 .benefits p {
-    line-height: 1.5rem;
+    line-height: 1.2rem;
+    font-size: 0.6rem;
     color: var(--responsive-light_grey);
 }
 
@@ -403,6 +415,10 @@ img {
 .about_us h2 {
     font-size: 2.5rem;
     color: var(--responsive-violet_bg);
+}
+
+.about_us p {
+    line-height: 1.8rem;
 }
 
 .about_us_card {
@@ -518,6 +534,50 @@ img {
         width: calc((100% / 12 * 9) - 0.6rem);
     } 
 
+    .get_demo .phone {
+        margin: 0 0 -1rem 0;
+    }
+
+    .strategic_planning {
+        padding-bottom: 0;
+    }
+
+    .strategic_planning p {
+        padding: 0;
+    }
+
+    .testimonial_photo,
+    .biography {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .testimonials .testimonial_card{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 1rem 0.7rem;
+    }
+    
+    .testimonials .testimonial_card p{
+        padding: 0;
+        font-size: 0.7rem;
+    }
+
+    .about_us_card i {
+        font-size: 2rem;
+    }
+
+    .about_us h4 {
+        font-size: 1.5rem;
+        color: var(--responsive-violet_bg);
+        line-height: 2rem;
+    }
+    
+    .about_us .btn {
+        letter-spacing: 0;
+    }
+
     .its_free .container,
     .site_footer .container {
         max-width: 450px;
@@ -559,6 +619,22 @@ img {
 
     .get_demo .col-8-lg{
         display: flex;
+    }
+
+    .get_demo .phone {
+        margin: auto auto -1rem auto;
+    }
+
+    .strategic_planning {
+        padding: 5rem 1rem;
+    }
+
+    .app_development {
+        padding-bottom: 3rem;
+    }
+
+    .about_us_card i {
+        font-size: 3rem;
     }
 }
 /* #endregion RESPONSIVE */
