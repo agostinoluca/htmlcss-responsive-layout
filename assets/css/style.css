@@ -422,6 +422,38 @@ img {
     padding: 0.5rem 1rem;
 }
 
+/* It's Free Section */
+.its_free h6 {
+    color: var(--responsive-light_grey);
+    letter-spacing: 1px;
+}
+
+.its_free h3 {
+    color: var(--responsive-white);
+}
+
+.its_free h2 {
+    color: var(--responsive-gold);
+    font-size: 3rem;
+}
+
+.its_free p {
+    color: var(--responsive-white);
+    font-size: 0.7rem;
+}
+
+.its_free .btn {
+    background-color: var(--responsive-white);
+    letter-spacing: 1px;
+    color: var(--responsive-violet_phrases);
+    padding: 0.8rem 2.5rem;
+    border-radius: 2rem;
+}
+
+.its_free a {
+    color: white;
+}
+
 /* #endregion main */
 
 /* #region footer */
@@ -457,6 +489,10 @@ img {
     .col-9-md{
         width: calc((100% / 12 * 9) - 0.6rem);
     } 
+
+    .its_free .container {
+        max-width: 450px;
+    }
 }
 
 @media screen and (min-width: 768px) {
