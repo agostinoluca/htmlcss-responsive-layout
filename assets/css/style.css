@@ -171,6 +171,10 @@ img {
     padding-bottom: 1.5rem;
 }
 
+.p-1-right {
+    padding-right: 0.25rem;
+}
+
 .p-12 {
     padding: 3rem;
 }
@@ -380,6 +384,42 @@ img {
     color: var(--responsive-white);
     letter-spacing: 1px;
     padding: 0.5rem 2.5rem;
+}
+
+/* About Us Section */
+.about_us h2 {
+    font-size: 2.5rem;
+    color: var(--responsive-violet_bg);
+}
+
+.about_us_card {
+    width: 60%;
+    position: relative;
+}
+
+.about_us_card img {
+    border-radius: 50%;
+}
+
+.about_us_card i {
+    position: absolute;
+    top: 0rem;
+    right: -0.5rem;
+    font-size: 3.5rem;
+    color: var(--responsive-violet_bg);
+}
+
+.about_us h4 {
+    font-size: 1.5rem;
+    color: var(--responsive-violet_bg);
+    line-height: 2rem;
+}
+
+.about_us .btn {
+    background-color: var(--responsive-violet_bg);
+    color: var(--responsive-white);
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
 }
 
 /* #endregion main */
